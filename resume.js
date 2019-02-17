@@ -1,6 +1,4 @@
-alert("alerts when page loads!")
-
-var slideIndex = 0;
+/*var slideIndex = 0;
 showSlides();
 
 function showSlides() {
