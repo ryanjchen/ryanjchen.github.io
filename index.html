@@ -1,119 +1,139 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<script src="resume.js">alert("This alert box was called with the onload event");</script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="resume.js"></script>
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Quicksand|Josefin+Slab|Philosopher|Julius+Sans+One|Spectral" rel="stylesheet">
 <link rel="stylesheet" href="resume.css">
 <title> Ryan J. Chen </title>
-<!-- this was only done because css body background color was not working -->
 </head>
-
-    
-    
-<nav class="sidenav">
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-</nav>
-    
 <body>
-    <article class="page-wrapper">
-    <h3 class="title hi" id="title">Hi there, I'm</h3>
-    <h1 class="title name">Ryan J. Chen</h1>
-    <header class="header">
-        <!--<article class="page-wrapper">-->
+    <nav class="navbar navbar-expand-md sections">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>    
+    <div class="title">
+    <h3 class="hi" id="title">hi there, I'm</h3>
+    <h1 class="name">Ryan</h1>
+    </div>
+    <div class="header">
+        <article class="page-wrapper">
             <section class="container-fluid">
                 <section class="row about">
                     <div class="col-md-6 slideshow">
                         <div class="mySlides">
-                            <img class="titleimage" src="images/cupmain.jpg" alt="cupmain">
+                            <img class="titleimage" src="images/landsend2.jpg" alt="cupmain">
                        </div>
                         <div class="mySlides ">
-                            <img class="titleimage" src="images/landsend.jpg" alt="landsend">
+                            <img class="titleimage" src="images/cupmain.jpg" alt="landsend">
                         </div>
                         <div class="mySlides">
                             <img class="titleimage" src="images/singing.jpg" alt="singing">
                         </div>
-                        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+
                     </div>
                     <div class="col-md-6">
                         <p style="font-size:30px">Welcome to my page!</p>
                         <p> I'm a chemical engineering graduate from UC Davis who's big on optimizing and automating processes—designing, developing and testing changes through the whole project lifecycle in order to work "smarter" and not harder.</p>
 
-                        <p>In my free time I like building things, making covers and winding down to a good RPG. I'm currently hooked on Kingdom Hearts III.</p>
+                        <p>In my free time I like learning and building projects, making covers and winding down to a good RPG. I'm currently hooked on Kingdom Hearts III.</p>
                     </div>
                 </section>
-            </section>   
-    </header>
-    </article>
+            </section>
+        </article>
+    </div>
 
     <article class="page-wrapper">
-        <h3 class="sections">Experience</h3> 
-        <section class="container-fluid" id="experience">
+        <h3 class="sections" id="experience">here's what I've been up to recently</h3> 
+        <section class="container-fluid experience">
             <span class="jobinfo">Product &amp; Sales Coordinator</span><br>
             <span class="jobinfo"><i>Anatomage</i></span>
-            <section class="row experience">
+            <section class="row">
                 <!--.experience gives some padding between the images-->
                 <div class="col-md-4 jobinfo">
                     <img class="expimage" src="images/anatomagetable.jpg" alt="anatomagetable">
-                    <!--alt is for the text that shows when you can't see the image-->
-                    <span class="centered date">October 2017<hr>Present</span>
+                    <span class="centered date">Oct '17<hr>Present</span>
                     </div>
                 <div class="col-md-8">
                     <span>At Anatomage, I went above and beyond nurturing clients throughout the entire sales cycle. I processed around $400,000 monthly in orders but ended up spending most of my time optimizing and automating our sales process on Salesforce. I got my Salesforce Admin certification and became one of only two SFDC gurus at my company. While onboarding users and troubleshooting UX requests, I also wrote Visualforce pages and Apex classes to streamline communication &amp; clean data.</span>
                 </div>
             </section>
+        </section>
+        <section class="container-fluid experience">
             <span class="jobinfo">Academic Tutor</span><br>
             <span class="jobinfo"><i>AJ Tutoring</i></span>
-            <section class="row experience">
+            <section class="row">
               <div class="col-md-4 jobinfo">
                     <img class="expimage" src="images/ajtutoring.jpg" alt="ajtutoring">
-                    <span class="centered date"> September 2017<hr>June 2018 </span>
+                    <span class="centered date"> Sept '17<hr>June '18 </span>
               </div>
               <div class="col-md-8">
-                  <span>As an academic tutor, being likable with high school students was the easy part; knowing your subject in and out and being able to communicate technical concepts to a non-technical person was the challenge. By constantly using catered analogies and applications to real-world concepts, I ended up helping many of my students not only go from C's to A's, but also becoming interested in the subject. </span>
+                  <span>As an academic tutor, being likable with high school students was the easy part; knowing your subject in and out and being able to communicate technical concepts to a non-technical person was the challenge. By constantly using catered analogies and applications to real-world concepts, I ended up helping many of my students not only go from C's to A's, but also become interested in the subject. </span>
               </div>
             </section>
+        </section>
+        <section class="container-fluid experience">
             <span class="jobinfo">Supply Chain Management Intern</span><br>
             <span class="jobinfo"><i>Frito-Lay</i></span>
-            <section class="row experience">
+            <section class="row">
               <div class="col-md-4 jobinfo">
                 <img class="expimage" src="images/fritolay.jpg" alt="fritolay">
-                  <span class="centered date">June 2016<hr>Septemper 2016</span>
+                  <span class="centered date">Jun '16<hr>Sept '16</span>
               </div>
               <div class="col-md-8">
-                  <span>Understanding how a business runs in a Fortune 500 company isn't easy. But that's exactly what my project entailed&#8212;improving the store door value(SDV) of our distribution center by increasing awareness of both sides of the business. To fully understand the </span>
+                  <span>Understanding how a business runs in a Fortune 500 company isn't easy. But that's exactly what my project entailed&#8212;improving the store door value(SDV) of our distribution center by increasing awareness of both sides of the business. To fully understand the Aside from running daily accuracy reports for the front-line members, I also implemented various programs and improved training methods to bridge the gap between the sales and operations sides.</span>
               </div>
              </section>
+        </section>
+        <section class="container-fluid spacing">
             <span class="jobinfo">Recycled Water Program Coordinator</span><br>
             <span class="jobinfo"><i>Central Contra Costa Sanitary District</i></span>
-            <section class="row experience">
+            <section class="row">
               <div class="col-md-4 jobinfo">
                 <img class="expimage" src="images/centralsan.jpg" alt="centralsan">
-                <span class="centered date">January 2016<hr>June 2016</span>
+                <span class="centered date">Jan '16<hr>June '16</span>
               </div>
               <div class="col-md-8">
                   <span>Amidst the zenith of the California drought, I was fortunate enough to be able to manage CCCSD's recycled water program during my 6 month co-op. From settings users up with the program to community outreach, I was able to analyze and report on the participant data during one their busiest seasons. Program aside, I also helped draft various construction projects along with cost estimates to determine the scope and financial viability of said projects.</span>
               </div>
             </section>
+        </section>
+        <section class="container-fluid spacing">
             <span class="jobinfo">Music Director</span><br>
             <span class="jobinfo"><i>Lounge Lizards</i></span>
-            <section class="row experience">    
+            <section class="row">    
               <div class="col-md-4 jobinfo">
                 <img class="expimage" src="images/acappella.jpg" alt="acappella">
-                  <span class="centered date">September 2015<hr>June 2016</span>
+                  <span class="centered date">Sept '15<hr>June '16</span>
               </div>
               <div class="col-md-8">
-                  <span>I sung a cappella (no instruments) for all my 5 years in college. During my fourth year, I rose up to the occasion and became the Music Director of the group responsible for teaching the music and bringing it all together in a harmonious melody. In all honesty, it was a rocky start for both the group and myself because the board of officers was entirely new. But by the end of it all, I had unified the group, boosted morale and learned more than just a few lessons about leadership and inspiration for myself.</span>
+                  <span>I sung a cappella (no instruments) for all my 5 years in college. During my fourth year, I rose up to the occasion and became the Music Director of the group responsible for teaching the music and bringing voices together in a harmonious melody. In all honesty, it was a rocky start for both the group and myself because the board of officers was entirely new. But by the end of it all, I had unified the group, boosted morale and learned more than just a few lessons about leadership and inspiration for myself.</span>
               </div>
             </section>
         </section>
-        <h3 class="sections">Projects</h3>
-        <section class="container-fluid projects" id="projects">
+        <!--<h3 class="sections">here's what I've built from scratch</h3>
+        <section class="container-fluid spacing" id="projects">
             <div class="row projectlevels" align="center">
                 <div class="col">
                     <p> Design </p>
@@ -125,50 +145,54 @@
                     <p> Test </p>
                 </div>
             </div>
-        </section>
-        <h3 class="sections">Skills</h3>
-        <section class="container-fluid" id="skills">
+        </section>-->
+        <h3 class="sections" id="skills">here's my technical palette</h3>
+        <section class="container-fluid spacing">
             <div class="row levels">
-                <div class="col-sm-1">
-<!-- makes an empty column so the first category is moved forward-->
+                <div class="col-1">
                 </div>
-                <div class="col-sm-3">
+                <div class="col-3">
                     <p>Basic</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     <p>Intermediate</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     <p>Advanced</p>
                 </div>
             </div>
             <div class="row skills SFDC">
-            <!-- you can have multiple classes but they there can only be one class tag but not two ids. also if you want to split up classes, you can just add a space between them -->
-                <span> Salesforce </span>
+            <span>Salesforce</span>
             </div>
             <div class="row skills HTML">
-                <span>HTML/CSS </span>
+                <span>HTML/CSS</span>
             </div>
             <div class="row skills JS">
-                <span> Javascript </span>
+                <span>Javascript</span>
             </div>
             <div class="row skills SQL">
-                <span> SQL </span>
+                <span>SQL </span>
             </div>
         </section>
-        <h3 class="sections"> Certifications </h3>
-        <section class="container-fluid" id="certifications">
+        <h3 class="sections" id="certifications">here's what I'm certified to handle</h3>
+        <section class="container-fluid spacing">
             <section class="row">
-                <div class="col-md-auto cert" >
+                <div class="col-md-6 cert" >
                     <img style="max-width:250px" src="images/sfdccert.jpg" alt="SFDCcertification">
                 </div>
-                <div class="col-md-auto cert">
+                <div class="col-md-6 cert">
                     Salesforce Certified Administrator <br> December 2018
                 </div>
             </section>
         </section>
-        <h3 class="sections"> Contact Me </h3> 
-        <section class="container-fluid" id="contact">
+        <h3 class="sections" id="contact"> here's other miscellaneous stuff about me</h3> 
+        <section class="container-fluid spacing sections">
+          <a href="mailto:ryfchen@ucdavis.edu"><i class="far fa-envelope icons"></i></a>
+          <a href="https://www.linkedin.com/in/ryanjchen" target="_blank">
+            <i class="fab fa-linkedin icons"></i></a>
+          <a href="/files/Resume%20-%20Ryan%20C.pdf" target="_blank">
+            <i class="far fa-file-alt icons"></i></a>
+          <a href="https://soundcloud.com/ohryanthehunter/tracks" target="_blank"><i class="fab fa-soundcloud icons"></i></a>
         </section> 
     </article>
     
@@ -176,8 +200,8 @@
     <section class="quote"> 
         <p style="font-size:35px">"Once you stop learning, you start dying" - Albert Einstein</p>
     </section>
-
-
-
-</body> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
