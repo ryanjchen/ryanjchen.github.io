@@ -24,6 +24,7 @@ body {
     padding:15px 50px 15px 50px;
     color:#f2f2f2;
     max-width: 1000px;
+    min-width: 375px;
 /* use . for classes, # for ids */
 }
 @keyframes title {0% {width:0%;} 100% {width:100%;}}
@@ -49,13 +50,19 @@ body {
     max-width:285px;
     padding:10px;
     height:auto;
-    text-align:center;
+}
+@media screen and (max-width: 600px){
+    .titleimage{
+        max-width:240px;
+        padding:5px;
+    }
 }
 .slideshow{
     text-align:center;
+    vertical-align:middle;
+
 }
 .mySlides:not(:first-child) {
-    text-align:center;
     display:none;
 }
 .fade{
@@ -156,38 +163,47 @@ hr{
     font-size: 20px;
     text-align:center;
     color:#f2f2f2;
+    padding:0 0 0 0;
+}
+ .levels p{
+        margin-bottom: 0;
+}
+@media screen and (max-width:600px){
+    .levels{
+        font-size:20px;
+    }
 }
 .skills{
     font-size: 20px;
-    background: linear-gradient(to right, #09203f 0%, #ff99bb 40%);*/
+    background: linear-gradient(to left, #ff1a66 0%, #09203f 100%);*/
     border-style:solid;
     border-color: #09203f;
     padding: 5px 0 5px 10px;
 }
     /* can do color gradients in any direction and multiple ones as well. */
 .SFDC{
-    width:88%;
+    width:95%;
     -webkit-animation: SFDC 4s ease;
     -moz-animation: SFDC 4s ease;
     -o-animation: SFDC 4s ease;
     animation: SFDC 4s ease;
 }
 .HTML{
-    width:65%;
+    width:80%;
     -webkit-animation: HTML-CSS 4s ease;
     -moz-animation: HTML-CSS 4s ease;
     -o-animation: HTML-CSS 4s ease;
     animation: HTML-CSS 4s ease;
 }
 .JS{
-    width:55%;
+    width:65%;
     -webkit-animation: JS 4s ease;
     -moz-animation: JS 4s ease;
     -o-animation: JS 4s ease;
     animation: JS 4s ease;
 }
 .SQL{
-    width:45%;
+    width:55%;
     -webkit-animation: SQL 4s ease;
     -moz-animation: SQL 4s ease;
     -o-animation: SQL 4s ease;
@@ -223,8 +239,14 @@ hr{
     text-decoration: none;
     color:#f2f2f2;
 }
+@media screen and (max-width:600px){
+    .icons{
+    font-size: 40px;
+        padding: 0 10px 0 10px;
+    }
+}
 .icons:hover{
-    color:#ff99bb;
+    color:#ff1a66;
 }
 #contact{
     text-align:center;
