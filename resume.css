@@ -17,7 +17,10 @@ body {
 .navbar i{
     color:#f2f2f2;
     padding:0 0 0 0px;
-}    
+}
+.navbar a:hover{
+    color:#b3b3b3;
+}
 .page-wrapper {
     margin:0 auto;
     font-family: Quicksand;
@@ -31,7 +34,22 @@ body {
 .hi {
     position:relative;
     font-size:40px;
+    /*border-right: 3px solid;
+    display:inline-block;*/
+    padding: 0 0 0 2.5px;
+    margin:0;
 }
+.blinker{
+    animation-name:blinker;
+    animation-iteration-count:3;
+    animation-duration:.8s;
+    animation-fill-mode:forwards;
+    border-right:3px solid;
+    /*display:inline-block;
+    width: 8px;
+    height:50px;*/
+}
+@keyframes blinker {from {opacity:1;} to {opacity:0;}}
 .name{
     font-size:100px;
     position:relative;
@@ -62,23 +80,23 @@ body {
     vertical-align:middle;
 
 }
-.mySlides:not(:first-child) {
+.mySlides:not(:first-child){
     display:none;
 }
 .fade{
     -webkit-animation-name:fade;
-    -webkit-animation-duration:1.5s;
+    -webkit-animation-duration:7s;
     animation-name:fade;
-    animation-duration:1.5s;
+    animation-duration:7s;
     -o-animation-name:fade;
-    -o-animation-duration:1.5s;
+    -o-animation-duration:7s;
     -moz-animation-name:fade;
-    -moz-animation-duration:1.5s;
+    -moz-animation-duration:7s;
 }
-@keyframes fade{from {opacity: .4} to {opacity: 1}}
-@-moz-keyframes fade{from {opacity: .4} to {opacity: 1}}
-@-webkit-keyframes fade{from {opacity: .4} to {opacity: 1}}
-@-o-keyframes fade{from {opacity: .4} to {opacity: 1}}
+@keyframes fade{0% {opacity:.3;} 30% {opacity:1;} 100%{opacity:1;} }
+@-moz-keyframes fade{0% {opacity: 1} 30% {opacity: 0}}
+@-webkit-keyframes fade{0% {opacity: 1} 30% {opacity: 0}}
+@-o-keyframes fade{0% {opacity: 1} 30% {opacity: 0}}
 .prev, .next{
     position:relative;
     cursor:pointer;
