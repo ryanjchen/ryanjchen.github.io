@@ -19,7 +19,37 @@ function typewriter() {
         document.getElementById("title").innerHTML += text.charAt(i);
         i++;
         document.querySelector("h3").innerHTML = text.substring(0, i+1) + '<span class="blinker" aria-hidden="true"></span>';
-        setTimeout(typewriter, 200);
+        setTimeout(typewriter, 150);
     }
 }
-window.onload=setTimeout(typewriter,3000);
+window.onload=setTimeout(typewriter,2800);
+
+var animateHTML = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+        elems = document.querySelectorAll('.skills');
+        windowHeight = window.innerHeight;
+        addEventHandlers();
+        checkPosition();
+    }
+    function addEventHandlers() {
+        window.addEventListener('scroll', checkPosition);
+        window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+        for (var i=0; i <elems.length; i++) {
+            var positionFromTop = elems[i].getBoundingClientRect().top;
+            if (positionFromTop - windowHeight <= 0) {
+                elems[i].className = elems[i].className.replace('hiddensfdc', 'SFDC');
+                elems[i].className = elems[i].className.replace('hiddenhtml', 'HTML-CSS');
+                elems[i].className = elems[i].className.replace('hiddenjs', 'JS');
+                elems[i].className = elems[i].className.replace('hiddensql', 'SQL');            
+                }
+            }
+        }
+    return {
+        init: init
+    };
+};
+animateHTML().init();
