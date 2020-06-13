@@ -136,12 +136,6 @@ hr{
     margin-bottom:0;
 }
 /* p vs span. span makes it so there is no spacing between. p will have it like a line break */
-.quote {
-    text-align:center;
-    color:#f2f2f2;
-    font-family:Dancing Script;
-    font-size: 40px;
-}
 .sections{
     color:#f2f2f2;
     font-family: Quicksand;
@@ -174,8 +168,8 @@ hr{
 }
 .date{
     font-size:20px;
-    background-color:rgba(0,68,102,0.5);
-    padding:10px;
+    /*background-color:rgba(0,68,102,0.5);
+    padding:10px;*/
 }
 .centered{
     position: absolute;
@@ -206,65 +200,173 @@ hr{
 .hidden{
     
 }
-.skills{
+.hardskills{
     font-size: 20px;
     background: linear-gradient(to left, #ff1a66 0%, #09203f 100%);*/
     border-style:solid;
     border-color: #09203f;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0px 5px 10px;
+}
+.hardskills .col{
+    padding:0px;
 }
     /* can do color gradients in any direction and multiple ones as well. */
 .SFDC{
-    width:95%;
+    width:100%;
     -webkit-animation: SFDC 4s ease;
     -moz-animation: SFDC 4s ease;
     -o-animation: SFDC 4s ease;
     animation: SFDC 4s ease;
 }
 .HTML-CSS{
-    width:80%;
+    width:75%;
     -webkit-animation: HTML-CSS 4s ease;
     -moz-animation: HTML-CSS 4s ease;
     -o-animation: HTML-CSS 4s ease;
     animation: HTML-CSS 4s ease;
 }
 .JS{
-    width:68%;
+    width:55%;
     -webkit-animation: JS 4s ease;
     -moz-animation: JS 4s ease;
     -o-animation: JS 4s ease;
     animation: JS 4s ease;
 }
-.SQL{
-    width:63%;
-    -webkit-animation: SQL 4s ease;
-    -moz-animation: SQL 4s ease;
-    -o-animation: SQL 4s ease;
-    animation: SQL 4s ease;
+.SOQL{
+    width:90%;
+    -webkit-animation: SOQL 4s ease;
+    -moz-animation: SOQL 4s ease;
+    -o-animation: SOQL 4s ease;
+    animation: SOQL 4s ease;
 }
-@keyframes SFDC {0% {width:0%;} 100% {width:95%;}}
-@-moz-keyframes SFDC {0% {width:0%;} 100% {width:95%;}}
-@-webkit-keyframes SFDC {0% {width:0%;} 100% {width:95%;}}
-@-o-keyframes SFDC {0% {width:0%;} 100% {width:95%;}}
+.Apex{
+    width:65%;
+    -webkit-animation: Apex 4s ease;
+    -moz-animation: Apex 4s ease;
+    -o-animation: Apex 4s ease;
+    animation: Apex 4s ease;    
+}
+@keyframes SFDC {0% {width:0%;} 100% {width:100%;}}
+@-moz-keyframes SFDC {0% {width:0%;} 100% {width:100%;}}
+@-webkit-keyframes SFDC {0% {width:0%;} 100% {width:100%;}}
+@-o-keyframes SFDC {0% {width:0%;} 100% {width:100%;}}
 
-@keyframes HTML-CSS {0% {width:0%;} 100% {width:80%;}}
-@-moz-keyframes HTML-CSS {0% {width:0%;} 100% {width:80%;}}
-@-webkit-keyframes HTML-CSS {0% {width:0%;} 100% {width:80%;}}
-@-o-keyframes HTML-CSS {0% {width:0%;} 100% {width:80%;}}
+@keyframes HTML-CSS {0% {width:0%;} 100% {width:75%;}}
+@-moz-keyframes HTML-CSS {0% {width:0%;} 100% {width:75%;}}
+@-webkit-keyframes HTML-CSS {0% {width:0%;} 100% {width:75%;}}
+@-o-keyframes HTML-CSS {0% {width:0%;} 100% {width:75%;}}
 
-@keyframes JS {0% {width:0%;} 100% {width:68%;}}
-@-moz-keyframes JS {0% {width:0%;} 100% {width:68%;}}
-@-webkit-keyframes JS {0% {width:0%;} 100% {width:68%;}}
-@-o-keyframes JS {0% {width:0%;} 100% {width:68%;}}
+@keyframes JS {0% {width:0%;} 100% {width:55%;}}
+@-moz-keyframes JS {0% {width:0%;} 100% {width:55%;}}
+@-webkit-keyframes JS {0% {width:0%;} 100% {width:55%;}}
+@-o-keyframes JS {0% {width:0%;} 100% {width:55%;}}
 
-@keyframes SQL {0% {width:0%;} 100% {width:63%;}}
-@-moz-keyframes SQL {0% {width:0%;} 100% {width:63%;}}
-@-webkit-keyframes SQL {0% {width:0%;} 100% {width:63%;}}
-@-o-keyframes SQL {0% {width:0%;} 100% {width:63%;}}
+@keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
+@-moz-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
+@-webkit-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
+@-o-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
+
+@keyframes Apex {0% {width:0%;} 100% {width:65%;}}
+@-moz-keyframes Apex {0% {width:0%;} 100% {width:65%;}}
+@-webkit-keyframes Apex {0% {width:0%;} 100% {width:65%;}}
+@-o-keyframes Apex {0% {width:0%;} 100% {width:65%;}}
+
+.softskills{
+    font-size: 20px;
+    background: linear-gradient(to right, #ff1a66 0%, #09203f 100%);*/
+    border-style:solid;
+    border-color: #09203f;
+    padding: 5px 5px 5px 10px;
+}
+.softskills .col{
+    text-align:right;
+    padding:0;
+
+}
+    /* can do color gradients in any direction and multiple ones as well. */
+.bsa{
+    width:100%;
+    -webkit-animation: bsa 4s ease;
+    -moz-animation: bsa 4s ease;
+    -o-animation: bsa 4s ease;
+    animation: bsa 4s ease;
+}
+.pm{
+    width:75%;
+    align-items:right;
+    -webkit-animation: pm 4s ease;
+    -moz-animation: pm 4s ease;
+    -o-animation: pm 4s ease;
+    animation: pm 4s ease;
+}
+.comm{
+    width:55%;
+    -webkit-animation: comm 4s ease;
+    -moz-animation: comm 4s ease;
+    -o-animation: comm 4s ease;
+    animation: comm 4s ease;
+}
+.tm{
+    width:95%;
+    -webkit-animation: tm 4s ease;
+    -moz-animation: tm 4s ease;
+    -o-animation: tm 4s ease;
+    animation: tm 4s ease;
+}
+.ps{
+    width:65%;
+    -webkit-animation: ps 4s ease;
+    -moz-animation: ps 4s ease;
+    -o-animation: ps 4s ease;
+    animation: ps 4s ease;    
+}
+@keyframes bsa {0% {width:0%;} 100% {width:100%;}}
+@-moz-keyframes bsa {0% {width:0%;} 100% {width:100%;}}
+@-webkit-keyframes bsa {0% {width:0%;} 100% {width:100%;}}
+@-o-keyframes bsa {0% {width:0%;} 100% {width:100%;}}
+
+@keyframes pm {0% {width:75%;} 100% {width:0%;}}
+@-moz-keyframes pm {0% {width:75%;} 100% {width:0%;}}
+@-webkit-keyframes pm {0% {width:75%;} 100% {width:0%;}}
+@-o-keyframes pm {0% {width:75%;} 100% {width:0%;}}
+
+@keyframes comm {0% {width:0%;} 100% {width:55%;}}
+@-moz-keyframes comm {0% {width:0%;} 100% {width:55%;}}
+@-webkit-keyframes comm {0% {width:0%;} 100% {width:55%;}}
+@-o-keyframes comm {0% {width:0%;} 100% {width:55%;}}
+
+@keyframes tm {0% {width:0%;} 100% {width:95%;}}
+@-moz-keyframes tm {0% {width:0%;} 100% {width:95%;}}
+@-webkit-keyframes tm {0% {width:0%;} 100% {width:95%;}}
+@-o-keyframes tm {0% {width:0%;} 100% {width:95%;}}
+
+@keyframes ps {0% {width:0%;} 100% {width:65%;}}
+@-moz-keyframes ps {0% {width:0%;} 100% {width:65%;}}
+@-webkit-keyframes ps {0% {width:0%;} 100% {width:65%;}}
+@-o-keyframes ps {0% {width:0%;} 100% {width:65%;}}
+
+
 .cert{
+    padding-bottom: 10px;
     text-align: center;
     font-size:20px;
 }
+.cert .current{
+    opacity:1;
+}
+.cert .upcoming{
+    opacity:.5;
+}
+.cert:hover .current{
+    opacity:.5;
+}
+.cert:hover .date{
+    opacity:1;
+}
+.cert .date{
+    opacity:0;
+}
+
 
 .icons{
     font-size: 50px;
@@ -286,4 +388,10 @@ hr{
 }
 .navbar-nav li a{
     color:#f2f2f2;
+}
+.quote {
+    text-align:center;
+    color:#f2f2f2;
+    font-family:Satisfy;
+    font-size: 40px;
 }
