@@ -261,10 +261,10 @@ hr{
 @-webkit-keyframes JS {0% {width:0%;} 100% {width:55%;}}
 @-o-keyframes JS {0% {width:0%;} 100% {width:55%;}}
 
-@keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
-@-moz-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
-@-webkit-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
-@-o-keyframes SOQL {0% {width:0%;} 100% {width:95%;}}
+@keyframes SOQL {0% {width:0%;} 100% {width:90%;}}
+@-moz-keyframes SOQL {0% {width:0%;} 100% {width:90%;}}
+@-webkit-keyframes SOQL {0% {width:0%;} 100% {width:90%;}}
+@-o-keyframes SOQL {0% {width:0%;} 100% {width:90%;}}
 
 @keyframes Apex {0% {width:0%;} 100% {width:65%;}}
 @-moz-keyframes Apex {0% {width:0%;} 100% {width:65%;}}

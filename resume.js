@@ -28,7 +28,7 @@ var animateHTML = function() {
     var elems;
     var windowHeight;
     function init() {
-        elems = document.querySelectorAll('.skills');
+        elems = document.querySelectorAll('.hardskills');
         windowHeight = window.innerHeight;
         addEventHandlers();
         checkPosition();
@@ -41,10 +41,11 @@ var animateHTML = function() {
         for (var i=0; i <elems.length; i++) {
             var positionFromTop = elems[i].getBoundingClientRect().top;
             if (positionFromTop - windowHeight <= 0) {
-                elems[i].className = elems[i].className.replace('hiddensfdc', 'SFDC');
-                elems[i].className = elems[i].className.replace('hiddenhtml', 'HTML-CSS');
-                elems[i].className = elems[i].className.replace('hiddenjs', 'JS');
-                elems[i].className = elems[i].className.replace('hiddensql', 'SQL');            
+                elems[i].className = elems[i].className.replace('hiddenSFDC', 'SFDC');
+                elems[i].className = elems[i].className.replace('hiddenHTML-CSS', 'HTML-CSS');
+                elems[i].className = elems[i].className.replace('hiddenJS', 'JS');
+                elems[i].className = elems[i].className.replace('hiddenSOQL', 'SOQL');
+                elems[i].className = elems[i].className.replace('hiddenApex','Apex');
                 }
             }
         }
